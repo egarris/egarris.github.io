@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <title>Coffee Clicker</title>
+</head>
+
+<body>
+  <div class="column-container">
+    <div class="column">
+      <div class="container left">
+        <div class="display-container">
+          <div class="counter-container">Coffee: <span id="coffee_counter">0</span></div>
+          <div class="cps-container"><span id="cps">0</span> coffee/second</div>
+          <div id="big_coffee">☕️</div>
+          <button type="button" id="reset-btn">Reset Game</button>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="column-header">Coffee Producers</div>
+      <div class="container right" id="producer_container">
+      </div>
+    </div>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
