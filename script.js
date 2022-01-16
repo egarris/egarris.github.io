@@ -189,6 +189,7 @@ if (typeof process === 'undefined') {
   document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.data) {
       data = JSON.parse(localStorage.getItem('data'))
+      updateCPSView(data['totalCPS'])
     } else {
       data = window.data
     }
@@ -211,6 +212,7 @@ if (typeof process === 'undefined') {
   resetGameBtn.addEventListener('click', () => {
     localStorage.clear()
     data = window.data
+    updateCPSView(data['totalCPS'])
   })
 
   // Call the tick function passing in the data object once per second
